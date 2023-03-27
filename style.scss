@@ -1,0 +1,121 @@
+$colortext: #fff;
+$colorbutton: #9C0332;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    /* как в макете
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/top-back.jpg); */
+    background-image: url(img/top-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1024px;
+
+    &__title {
+        color: $colortext;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        padding-top: 217px;
+        width: 760px;
+        margin-bottom: 32px;
+    }
+}
+
+.text {
+    color: $colortext;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+
+    span {
+        font-weight: 700;
+    }
+
+    &_header {
+        width: 481px;
+        margin-bottom: 44px;
+    }
+}
+
+.button {
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background: $colorbutton;
+    color: $colortext;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.games {
+    height: 556px;
+    background: #000915;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 32px;
+        padding-top: 128px;
+    }
+
+    &__item {
+        height: 300px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $colortext;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 32px;
+        box-sizing: border-box;
+
+        &_1 {
+            background-image: url(img/game-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 17px;
+        }
+
+        &_2 {
+            background-image: url(img/game-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 17px;
+        }
+
+        &_3 {
+            background-image: url(img/game-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 17px;
+        }
+    }
+}
+
+@import 'mobile';
