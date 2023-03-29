@@ -51,3 +51,4 @@ user.age = 30;
 delete user['country of residence']
 let info = prompt('Какую информацию хотите узнать о пользователе?');
 alert(user[info]);
+
