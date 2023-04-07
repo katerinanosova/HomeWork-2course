@@ -40,6 +40,7 @@ $colorbutton: #9C0332;
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
+    margin-bottom: 32px;
 
     span {
         font-weight: 700;
@@ -64,6 +65,11 @@ $colorbutton: #9C0332;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    transition: .3s;
+
+    &:hover {
+        background: #EB443F;
+    }
 }
 
 .games {
@@ -116,6 +122,30 @@ $colorbutton: #9C0332;
             border-radius: 17px;
         }
     }
+}
+
+.seasons {
+    height: 800px;
+    background: #000915;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 135px;
+
+    &__img {
+        width: 100%;
+    }
+
+}
+
+.heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: $colortext;
+    margin-bottom: 32px;
 }
 
 
