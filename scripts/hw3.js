@@ -18,12 +18,15 @@ if (c > 0 && c < 10) {
 //exercise 3
 let d = 24;
 let e = 123;
-(d > 100 || e > 100) ? console.log('Верно') : console.log('Не верно');
+
+console.log(d > 100 || e > 100 ? 'Верно' : 'Не верно');
+
 
 //exercise 4
 let a = 2;
 let b = 3;
-console.log (a + b);
+console.log(a + b);
+
 
 //exercise 5
 let monthNumber = prompt('Enter month number');
