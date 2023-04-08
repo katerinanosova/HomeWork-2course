@@ -40,7 +40,7 @@ let a = prompt('Enter first number');
 let b = prompt('Enter second number');
 
 function getSquare() {
-    if (isNaN(a) || Number.isNaN(b)) {
+    if (isNaN(a) || isNaN(b)) {
         return 'Одно или оба значения не являются числом';
     }
     else {
