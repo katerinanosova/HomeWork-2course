@@ -86,8 +86,7 @@ getSquares([2, 3, 4, 5]);
 //exercise 12
 let arr12 = ['слово', '', 'слог', 'длинное предложение', 'буква'];
 function getElementLength() {
-    arr12 = arr12.map(element => element.length);
-    return arr12;
+    return arr12.map(element => element.length);
 };
 getElementLength();
 
@@ -95,8 +94,7 @@ getElementLength();
 //exercise 13
 let arr13 = [];
 function getNegatives(arr13) {
-    arr13 = arr13.filter(item => item < 0);
-    return arr13;
+    return arr13.filter(item => item < 0);
 };
 getNegatives([1, 15, -3, 8, 0, -4]);
 
