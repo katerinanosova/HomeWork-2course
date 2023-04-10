@@ -1,8 +1,13 @@
 //exercise 1
 const arr1 = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] == 10) break;
-    console.log(arr1[i]);
+    if (arr1[i] !== 10) {
+        console.log(arr1[i]);
+    };
+    if (arr1[i] == 10) {
+        console.log(arr1[i]);
+        break;
+    }
 }
 
 //exercise 2
@@ -66,7 +71,11 @@ console.log([...arr9[0], ...arr9[1]]);
 
 
 //exercise 10
-let arr10 = [9, 8, 7, 6, 5];
+let arr10 = [];
+for (let i = 0; i < 6; i++) {
+    arr10[i] = Math.ceil(Math.random() * 10);
+};
+console.log(arr10);
 for (let i = 0; i < arr10.length; i++) {
     let element = arr10[i] + arr10[i + 1];
     if (i === (arr10.length - 1)) {
