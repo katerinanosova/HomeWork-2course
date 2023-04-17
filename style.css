@@ -190,7 +190,7 @@
     row-gap: 32px;
   }
   .seasons {
-    height: 653px;
+    height: 800px;
     grid-template-columns: repeat(1, 1fr);
     align-items: start;
   }
@@ -199,12 +199,19 @@
     flex-direction: column;
     align-items: center;
   }
+  .seasons__img_right {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
   .heading {
     margin-top: 51px;
     text-align: center;
   }
 }
 @media (max-width: 410px) {
+  .seasons {
+    height: 650px;
+  }
   .heading {
     font-size: 32px;
     line-height: 39px;

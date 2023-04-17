@@ -20,3 +20,23 @@ function getSeason() {
         confirm('Вы ввели неправильное значение. Попробовать еще раз?') ? getSeason() : alert('А зря!');
     }
 }
+
+function guessFruit() {
+    let fruitList = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let fruitListNew = fruitList.sort(() => Math.random() - 0.5);
+    alert(`Запомни порядок фруктов: ${fruitListNew.join(', ')}`);
+    let userFirstElementAnswer = prompt('Какой фрукт был первый в списке?');
+    let userLastElementAnswer = prompt('Какой фрукт был последним в списке?');
+    if (userFirstElementAnswer === null && userLastElementAnswer === null) {
+        alert('Ладно, не будем играть')
+    }
+    else if (userFirstElementAnswer.toLowerCase() === fruitListNew[0].toLowerCase() && userLastElementAnswer.toLowerCase() === fruitListNew[fruitListNew.length - 1].toLowerCase()) {
+        alert(`Молодец!`)
+    }
+    else if (userFirstElementAnswer.toLowerCase() === fruitListNew[0].toLowerCase() || userLastElementAnswer.toLowerCase() === fruitListNew[fruitListNew.length - 1].toLowerCase()) {
+        alert(`Вы были близки к победе!`)
+    }
+    else {
+        confirm('Оба ответа неверные. Давай ещё раз?') ? guessFruit() : alert('Зря! Это тренирует память!')
+    }
+}
